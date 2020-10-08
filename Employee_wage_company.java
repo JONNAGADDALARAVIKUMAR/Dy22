@@ -198,15 +198,15 @@ class Wage_calculation {
 		}
 		
 	
-	if(hrs>max)
+	if(hrs>min)
 	{
-		totalPay=max*wagehour;
+		totalPay=min*wagehour;
 	}
 	else
 	{
 		totalPay=hrs*wagehour;
 	}
-	System.out.println("\t\t\t\t\t\t\t\t\t      --------\n\t\t\t\t\t\t\t\t\tTotal\t: "+totalPay+"\n\n\n\t\tNo. of Working days\t: "+workingDays+" \n\n\t\tNo. of days Worked\t: "+present+"\n\n\t\tNo. of Absents\t\t: "+(workingDays-present)+"\n\n\t\ttotal Working Hours\t: "+hrs+"\n\n\t\tMaximum Working Hours\t: "+max);
+	System.out.println("\t\t\t\t\t\t\t\t\t      --------\n\t\t\t\t\t\t\t\t\tTotal\t: "+totalPay+"\n\n\n\t\tNo. of Working days\t: "+workingDays+" \n\n\t\tNo. of days Worked\t: "+present+"\n\n\t\tNo. of Absents\t\t: "+(workingDays-present)+"\n\n\t\ttotal Working Hours\t: "+hrs+"\n\n\t\tMaximum Working Hours\t: "+min);
 	System.out.println("\n\t\tTotal wage\t\t: "+totalPay);
 	
 	}
